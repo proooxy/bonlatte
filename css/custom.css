@@ -3,9 +3,25 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+@font-face {
+  font-family: Candy Shop;
+  src: url('../assets/Candy\ Shop\ Black\ Personal\ Use.ttf');
+}
+
+#slider h1{
+  font-family:Candy Shop;
+  color: var(--primary);
+  font-size: 5rem;
+  
+}
+
 body {
   background: url(../assets/footer-bg.png) no-repeat center bottom;
   padding-bottom: 100px;
+}
+
+#header .logodo img {
+  max-height: 91px;
 }
 
 #header {
@@ -27,6 +43,8 @@ body {
   width: auto;
 }
 
+
+
 #header .nav-link {
   text-transform: uppercase;
   font-weight: 500;
@@ -43,11 +61,11 @@ body {
 }
 
 #slider {
-  background: url('../assets/slider-bg.svg')  no-repeat center bottom;
+  background: url('../assets/slider-bg1.jpg')  no-repeat center bottom;
   background-size: contain;
 } 
 #slider h1 {
-  text-transform: uppercase;
+  
   font-weight: 900;
 }
 
@@ -56,7 +74,7 @@ body {
   text-transform: uppercase;
 }
 
-#servicosR a.destaque {
+#servicos a.destaque {
   display: block;
   background: var(--light);
   border-radius: 5px;
@@ -69,24 +87,24 @@ body {
 
 }
 
-#servicosR a.destaque:hover {
+#servicos a.destaque:hover {
   background: #fff;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
   transform: scale(1.05)
 }
 
-#servicosR p {
+#servicos p {
   color: var(--dark);
 } 
 
-#servicosR a.destaque .img-container {
+#servicos a.destaque .img-container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 200px;
 }
 
-#servicosR a.destaque .img-container img {
+#servicos a.destaque .img-container img {
   max-height: 160 px;
 }
 
@@ -108,18 +126,18 @@ body {
 
 #servicos .button-group button {
   background: none;
-  border:none;
-  padding:0;
+  border: none;
+  padding: 0;
   margin: 0;
   text-transform: uppercase;
   font-weight: 700;
   outline: none;
-
 }
 
 #servicos .button-group button + button {
   margin-left: 30px;
 }
+
 #servicos .button-group button.active {
   color: var(--primary);
 }
@@ -186,4 +204,14 @@ body {
 
 #contato ul li img {
   max-height: 20px;
+}
+
+#contato-r #contato .final img {
+  max-height: 90px;
+}
+
+#sobre1 #sobre .sobreimg img:hover{
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transform: scale(1.01)
 }

@@ -21,9 +21,11 @@
         <nav
           class="navbar navbar-expand-lg navbar-light justify-content-between"
         >
+        <section class="logodo">
           <a class="navbar-brand" href="#">
-            <img src="assets/logo.svg" class="img-fluid" />
+            <img src="assets/logodoce.png" class="img-fluid" />
           </a>
+        </section>
           <button
             class="navbar-toggler"
             type="button"
@@ -68,11 +70,11 @@
       <div class="col-md-4 align-self-center mb-md-0 mb-4">
         <h1>BonLatte</h1>
         <h4 class="mb-4">Doceria BonLatte, feito com amor.</h4>
-        <a href="#" class="btn button-primary btn-primary button d-md-inline-block d-block mb-md-0 mb-2 mr-md-2">Saiba mais</a>
+        <a href="https://www.instagram.com/bonlattee/" class="btn button-primary btn-primary button d-md-inline-block d-block mb-md-0 mb-2 mr-md-2">Instagram</a>
         <a href="#" class="btn button-primary-outline btn-outline-primary button d-md-inline-block d-block">Contato</a>
       </div>
       <div class="col-md-8 align-self-center text-center">
-        <img src="assets/slider.svg" class="img-fluid"/>
+        <img src="assets/slider-1.png" class="img-fluid"/>
 
       </div>
     </div>
@@ -87,7 +89,9 @@
     <div class="container">
       <div class="row">
       <div class="col-md-6 text-center align-self-center order-md-1 order-2">
-        <img src="assets/sobre.svg" class="img-fluid">
+        <section class="sobreimg">
+        <img src="assets/sobre.jpg" class="img-fluid">
+      </section>
       </div>
       <div class="col-md-6 align-self-center mb-md-0 mb-4 order-md-2 order-1">
         <h2 class="title">
@@ -109,7 +113,7 @@
 
 <!--Serviços-->
 <section id="servicos1">
- <div id="servicosR" class="block">
+ <div id="servicos" class="block">
   <div class="container">
     <h2 class="title text-center">Nossos Serviços</h2>
     <h4 class="sutitle text-center mb-4">Conheça nossos serviços</h4>
@@ -117,37 +121,37 @@
       <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
         <a href="#" class="destaque" >
           <div class="img-container mb-3">
-            <img src="assets/destaque1.svg" class="img-fluid">
+            <img src="assets/ovo.jpg" class="img-fluid">
           </div>
-          <h5 class="text-uppercase">Bolo</h5>
-          <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus doloremque ullam </p>
+          <h5 class="text-uppercase">Ovos recheados</h5>
+          <p class="mb-0">Esses ovos das fotos são de 100g. Eles fazem parte do trio de ovos! </p>
         </a>
       </div>
       <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
         <a href="#" class="destaque" >
           <div class="img-container mb-3">
-            <img src="assets/destaque1.svg" class="img-fluid">
+            <img src="assets/brownie.jpg" class="img-fluid">
           </div>
-          <h5 class="text-uppercase">Bolo</h5>
-          <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus doloremque ullam </p>
+          <h5 class="text-uppercase">Brownie</h5>
+          <p class="mb-0">Esse é o kit de 6 brownies premium, Dar amor em forma de comida nesses tempos não tem erro, garantimos! </p>
         </a>
       </div>
       <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
         <a href="#" class="destaque" >
           <div class="img-container mb-3">
-            <img src="assets/destaque1.svg" class="img-fluid">
+            <img src="assets/brigadeiro.jpg" class="img-fluid">
           </div>
-          <h5 class="text-uppercase">Bolo</h5>
-          <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus doloremque ullam </p>
+          <h5 class="text-uppercase">Especial</h5>
+          <p class="mb-0">Kit especial Dia das Mães, uhul! Ele é composto por 9 mini brownies recheados com o sabor da sua preferência! </p>
         </a>
       </div>
       <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
         <a href="#" class="destaque" >
           <div class="img-container mb-3">
-            <img src="assets/destaque1.svg" class="img-fluid">
+            <img src="assets/cesta.jpg" class="img-fluid">
           </div>
-          <h5 class="text-uppercase">Bolo</h5>
-          <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus doloremque ullam </p>
+          <h5 class="text-uppercase">Doces e Salgados</h5>
+          <p class="mb-0">Esse kit é apaixonante! É especial... o casal pode aproveitar junto tantas coisas gostosas!</p>
         </a>
       </div>
       
@@ -170,8 +174,8 @@
       Conheça nossos doces, bolos, brigadeiros e mais
     </h4>
 
-    <div class="button-group">
-      <button type="button" class="active" data-filter="*">Todos</button>
+    <div class="button-group" >
+      <button type="button" class="active" data-filter="*" id="btn-all">Todos</button>
       <button type="button" data-filter=".bolo">Bolo</button>
       <button type="button" data-filter=".brigadeiro">Brigadeiro</button>
       <button type="button" data-filter=".bolodepote">Bolo de pote</button>
@@ -301,32 +305,40 @@
       <img src="assets/paperplane.svg" />
       <h2 class="title text-center">Entre em contato</h2>
       <h4 class="subtitle text-center mb-4">
-        Clica no botão abaixo e vem fazer seu pedido !
+        Clica no botão abaixo e vem fazer sua encomenda !
       </h4>
-      <form>
+      <button
+            type="submit"
+            class="btn btn-light button mb-3 d-md-inline d-block w-40"
+          >
+            Entre em Contato
+          </button>
+      <!-- <form>
         <div class="flex-md-grow-1 pr-md-3 pb-md-0 pb-3">
-          <label for="email" class="sr-only">Password</label>
-          <input
-            type="email"
-            class="form-control w-100"
-            id="email_input"
-            placeholder="seu email"
-          />
+          <button
+            type="submit"
+            class="btn btn-light button mb-3 d-md-inline d-block w-100"
+          >
+            Entre em Contato
+          </button>
+         
         </div>
         <div class="flex-grow-1 flex-md-grow-0">
           <button
             type="submit"
             class="btn btn-light button mb-3 d-md-inline d-block w-100"
           >
-            cadastre-se
+            Entre em Contato
           </button>
         </div>
-      </form>
+      </form> -->
     </div>
     <div class="logo py-4">
       <div class="row">
         <div class="col-md-6 align-self-center text-center text-md-left">
-          <img src="assets/logo.svg" class="img-fluid">
+          <section class="final">
+          <img src="assets/logodoce.png" class="img-fluid">
+         </section>
         </div>
         <div class="col-md-6 align-self-center text-right">
           <ul>
